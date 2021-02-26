@@ -1,0 +1,104 @@
+.sidebar{
+    color:#fff;
+    background-color: #040404;
+    flex-basis:18%;
+    min-height:95vh;
+    transition: flex-basis 0.4s ease;
+    min-width:230px;
+   
+   -webkit-box-orient: vertical;
+   -webkit-box-flex:1;
+}
+.sidebar_inner{
+    min-width:230px;
+    max-width:240px;
+    position:fixed;
+    top:0;
+    left:0;
+    padding:15px;
+    min-height:95vh;
+}
+
+.sidebar_logo{
+    height:70px;
+    object-fit:contain;
+    margin-right:auto;
+}
+.sidebar_menu{
+    overflow:auto;
+    padding:18px 0;
+}
+.sidebar_menu a.sidebar_menu_item.active,.sidebar_menu a.sidebar-active-link{
+    font-weight:bolder;
+    background-color:#1f1f1f;
+    border-radius:3px;
+    color:#fff;
+}
+.sidebar_menu  .sidebar_menu_item{
+    padding:4px;
+    
+}
+.sidebar .sidebar_unordered_list li{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:block;
+}
+.sidebar .sidebar_menu_item , .sidebar .sidebar_unordered_list li a, .sidebar .sidebar_unordered_list li a:visited{
+    color: var(--gray);
+    /* align-items:center; */
+    margin-bottom: 10px;
+    transition: all 0.150s ease-in;
+    cursor:pointer;
+}
+.sidebar .sidebar_menu_item:hover , .sidebar .sidebar_unordered_list li a:hover{
+    color:#fff;
+}  
+.sidebar .sidebar_menu_item h5, .sidebar .sidebar_unordered_list li a {
+    font-size:15px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.sidebar_unordered_list{
+    overflow:auto;
+    max-height: 250px;
+}
+.icon{
+    margin-top:2px;
+    font-size:20px;
+    margin-right:10px;
+}
+.sidebar_header{
+    color:#fff;
+    font-size:12px;
+    margin-bottom:0px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing: 0.1em;
+    line-height:16px;
+}
+.sidebar_hr{
+    width:95%;
+    height: 1px;
+    background-color:  #282828;
+    border-radius:30%;
+    margin:8px auto 10px auto;
+}
+.sidebar ul.sidebar_unordered_list{
+    list-style:none;
+    margin: 4px 0 0;
+    padding:0;
+}
+@media only screen and (max-width: 650px){
+    .sidebar{
+        flex-basis:0;
+        display:none !important;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .sidebar{
+        flex-basis:14%;
+    }
+}

@@ -1,0 +1,39 @@
+/* #artist_main_container{
+   
+    width:100%;
+} */
+#artist_main_container::-webkit-scrollbar{
+    display:none;
+}
+#artist_main_container .backlayer{
+    background-color:rgb(146, 96, 76);
+}
+#artist_main_container .artist-info-section{
+    width:100%;
+    min-height: 340px;
+    height:30vh;
+}
+#artist_main_container .artist_followers_count{
+    font-size:16px;
+    font-weight:bolder;
+    color:#fff;
+    margin:10px 3vw;
+
+}
+#artist_main_container .artist_img{
+    width:15vw;
+    min-width:140px;
+    object-fit: cover;
+    display:inline-block;
+}
+
+@media only screen and (max-width: 690px){
+    #artist_main_container .artist_followers_count{
+        font-size:12px;
+        font-weight:bold;
+        white-space:wrap;
+    }
+    .playlist_interface {
+        flex-direction:column;
+    }
+}

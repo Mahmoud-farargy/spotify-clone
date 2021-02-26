@@ -1,0 +1,27 @@
+.song_duration, .song-index,.song-name p{
+    color:var(--gray);
+}
+.song_row:hover{
+    background-color:rgba(255,255,255,0.2);
+    border-radius: 6px;
+}
+.song-index{
+    margin-right:8px;
+}
+.song_row, .song_item{
+    width:100%;
+}
+.song_item{
+    /* align-items:center; */
+    justify-content:space-between;
+}
+.song-name{
+    max-width:200px;
+}
+.song-name h5{
+    color:#fff;
+}
+.active-clicked div h5,.active-clicked .song-index, .active-clicked .song_duration {
+    color:var(--primary-clr);
+    font-weight:bolder;
+}

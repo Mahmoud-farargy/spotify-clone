@@ -1,0 +1,7 @@
+
+#single_track_container div.backlayer{
+    background: linear-gradient(rgb(174, 126, 120),rgba(17,17,17,0.9) 100% );
+}
+#single_track_container div.face-front{
+    background-color:rgb(174, 126, 120);
+}

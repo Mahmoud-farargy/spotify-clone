@@ -1,0 +1,105 @@
+#user_profile_container{
+    padding: 3px 3px 100px 3px;
+    background: #111;
+}
+#user_profile_container .body_upper_row .user_info{
+    display:none !important;
+}
+#user_profile_container::-webkit-scrollbar{
+    display:none;
+}
+#user_profile_container .backlayer{
+    background: linear-gradient(rgb(83, 83, 83),rgba(17,17,17,0.9) 100% );
+}
+#user_profile_container .face-front{
+    background-color:rgb(83, 83, 83);
+    min-height:270px;
+}
+
+#user_profile_container .user_avatar{
+    box-shadow:0 4px 60px rgba(0,0,0,.5);
+    width:100%;
+    height:100%;
+}
+#user_profile_container .avatar_container{
+    width:191px;
+    height:191px;
+    margin-right:24px;
+    -webkit-box-align:end;
+    align-items:flex-end;
+}
+#user-inner-container {
+    height:33vh;
+    min-height:340px;
+    max-height:500px;
+    overflow:hidden;
+}
+#user_profile_container .playlist_info{
+    -webkit-box-align:end;
+    align-items:flex-end;
+}
+#user_profile_container .playlist_info h2{
+    font-size:70px;
+    visibility: visible;
+    /* line-height: 70px; */
+}
+#user_profile_container .profile_middle-deck{
+    width:100%;
+    justify-content:space-between;
+}
+#user_profile_container .profile_middle-deck  .profile_playlists_count{
+    cursor:pointer;
+}
+#user_profile_container .profile_middle-deck  .profile_playlists_count  > span,
+#user_profile_container .profile_middle-deck  .profile_followers_count  > span
+{
+    font-size:15px;
+    font-weight: 600;
+    color:var(--gray);
+    margin-bottom: 8px;
+}
+#user_profile_container .profile_middle-deck .profile_playlists_count > h5,
+#user_profile_container .profile_middle-deck .profile_followers_count > h5
+{
+    font-size:12px;
+    font-weight: 700;
+    color: #fff;
+}
+#user_profile_container .spotify-link a{
+    color:var(--primary-clr);
+}
+#user_profile_container .profile-playlist-list{
+    z-index:400;
+    color:#fff;
+    padding:15px 0;
+}
+#user_profile_container .songs_upper_deck_controls div{
+    align-items:flex-start !important;
+}
+#user_profile_container .user_id_profile{
+    font-size:12px;
+    font-weight:bold;
+    margin-top:4px;
+    letter-spacing:2px;
+    color:#fff;
+}
+#user_profile_container .user-info-section{
+    justify-content:flex-end;
+}
+
+#user_profile_container .profile_body{
+    color:#fff;
+}
+
+@media only screen and  (max-width: 670px){
+    #user_profile_container{
+        padding: 3px 3px 120px 3px;
+    }
+    #user_profile_container .avatar_container{
+        width:100px;
+        height:100px;
+    }
+    #user_profile_container .playlist_info h2{
+        font-size:25px;
+    }
+}

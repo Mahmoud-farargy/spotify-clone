@@ -1,0 +1,123 @@
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    padding: 10px 20px;
+    width:100%;
+    height:auto;
+    color:#000;
+    justify-content: center;
+    background-color:#282828;
+    align-items:center;
+    border-top:1px solid #000;
+    user-select:none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction:normal;
+    z-index:55;
+    min-width:620px;
+}
+.playbar{
+    width:100%;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    gap:10px;
+    align-items:center;
+}
+.player .song_img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    margin-right:20px;
+}
+.playbar_controls{
+    flex-basis: 40%;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:10px;
+    max-width:300px;
+}
+.playbar_info{
+    flex-basis: 30%;
+    align-items:center;
+    width:300px;
+}
+.playbar_volume{
+    justify-content: flex-end;
+    flex-basis: 30%;
+    float:right;
+    align-items:center;
+}
+.playbar_controls_inner{
+    justify-content:space-between;
+    align-items:center;
+}
+.playbar_volume_inner{
+    min-width:190px;
+    align-items:center;
+}
+.playIcon{
+    font-size:25px;
+    margin-right:15px;
+    color:rgb(197, 197, 197);
+    transition: transform 0.2s ease-in-out; 
+}
+.play-middle{
+    font-size:30px;
+}
+.play-middle:active{
+    color:#fff;
+}
+.playIcon:hover{
+    transform: scale(1.2);
+}
+.playbar_controls .play-shuffle-icon{
+    font-size:17px;
+    margin-right:20px;
+    color:var(--primary-clr);
+}
+.playbar_controls .play-repeat-icon{
+    font-size:15px;
+    margin-left:5px;
+    color:var(--primary-clr);
+}
+.playbar_volume .playlist-play-icon{
+    font-size:24px;
+    margin-right:15px;
+}
+.playbar_volume .volume-down-icon{
+    font-size:20px;
+    margin-right:15px;
+}
+.playbar_volume .playlist-play-icon, .volume_slider{
+    color:var(--primary-clr) !important;
+}
+.song_info h4{
+    font-size:15px;
+    margin-bottom:5px;
+    color:#fff;
+}
+.song_info p{
+    font-size:12.5px;
+    color:var(--gray);
+}
+.volume_slider{
+    width:80%;
+    max-width:70px;
+}
+.display-play-btn{
+    position: relative;
+}
+.display-play-btn .buffer{
+    position:absolute;
+    top:15px;
+    left:50%;
+    margin-left:-7px;
+    z-index:100;
+    transform: translate(-50%, -50%);           
+}
+@media only screen and (max-width: 680px){
+    .footer{
+        display:none !important;
+        padding: 5px;
+    }
+}
